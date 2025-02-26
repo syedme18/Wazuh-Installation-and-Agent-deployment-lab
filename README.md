@@ -85,12 +85,12 @@ curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh && sudo bash ./wazuh-in
 
 3. Enter the **username and password** from the terminal.
    
-   ![10](https://github.com/user-attachments/assets/c043fabe-291c-41b5-af1c-2667cf08aaee)
+  ![10](https://github.com/user-attachments/assets/c043fabe-291c-41b5-af1c-2667cf08aaee)
 
 
 4. You will now see the **Wazuh Dashboard**.
    
-   ![11](https://github.com/user-attachments/assets/b425262d-fb9e-4776-95dc-fcbbdbfc8214)
+  ![11](https://github.com/user-attachments/assets/b425262d-fb9e-4776-95dc-fcbbdbfc8214)
 
    # Deploying Wazuh Agent in Malware Analysis VM
 
