@@ -1,5 +1,5 @@
 # Wazuh-Installation-and-Agent-deployment-lab
-# 🚀 Installing Wazuh in Ubuntu (VM)
+## 🚀 Installing Wazuh in Ubuntu (VM)
 
 ## 📌 Introduction
 **Wazuh** is a free, open-source security system that provides **Extended Detection and Response (XDR)** and **Security Information and Event Management (SIEM)** functionality. It helps businesses monitor, detect, and respond to threats across endpoints, cloud environments, and on-premises infrastructure.
@@ -91,6 +91,67 @@ curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh && sudo bash ./wazuh-in
 4. You will now see the **Wazuh Dashboard**.
    
    ![11](https://github.com/user-attachments/assets/b425262d-fb9e-4776-95dc-fcbbdbfc8214)
+
+   # Deploying Wazuh Agent in Malware Analysis VM
+
+## Overview
+This document provides step-by-step instructions for deploying a Wazuh agent in a malware analysis virtual machine (VM). Follow these steps carefully to ensure a successful deployment.
+
+## Steps to Deploy Wazuh Agent
+
+### 1. Add Agent from Home Screen
+- Navigate to the Wazuh home screen.
+- Click on **Add Agent**.  
+  ![12](https://github.com/user-attachments/assets/eeb7122e-22bb-4445-8ddd-37fe494f7d7c)
+
+
+### 2. Select Operating System
+- Choose the appropriate operating system of the endpoint where the Wazuh agent will be installed.
+
+### 3. Configure Server Details
+- Enter the **IP address** of the Wazuh server.
+- Assign an **agent name** to help identify the endpoint later.  
+  
+
+
+https://github.com/user-attachments/assets/0c0d1809-1ced-496f-be17-6154242f971a
+
+
+### 4. Assign Agent Group
+- Keep the existing group as **default**.
+
+### 5. Generate Installation Command
+- Wazuh will generate a command to run on the endpoint.  
+  ![14](https://github.com/user-attachments/assets/18e6732c-f87c-43da-be88-b8d0ed596279)
+
+
+### 6. Run Command on Endpoint
+- Open **PowerShell as Administrator** on the endpoint.
+- Copy and paste the generated command.
+- The command will start writing a web request; wait until it completes.  
+  
+
+https://github.com/user-attachments/assets/4801dcf3-79a6-49ad-a87d-5901b0ec22d6
+
+
+
+### 7. Run Second Command
+- Copy and paste the second command in PowerShell on the endpoint.  
+  
+
+
+https://github.com/user-attachments/assets/12aafe73-66e2-4b41-ad4a-e65d2447d653
+
+
+### 8. Verify Deployment
+- Once the process is complete, the agent will appear in the **Agent section** as **Active**.  
+ ![17](https://github.com/user-attachments/assets/a6ee6acc-9221-4d02-b6dd-fa0fb2999b23)
+
+
+## Conclusion
+By following these steps, you have successfully deployed the Wazuh agent on your malware analysis VM. The agent should now be actively monitoring the endpoint and sending data to the Wazuh server.
+
+
 
 
 
